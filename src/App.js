@@ -1,8 +1,8 @@
 
-import './App.css';
+import './App.scss';
 import React, {useEffect, useState} from 'react'
-import Modal from './modal'
-import Navigation from './Navigation';
+import Modal from './componentns/modal/modal'
+import Navigation from './componentns/navigation/Navigation';
 import AppRoutes from './AppRoutes';
 
 
@@ -135,13 +135,13 @@ addCardsArr.push(products[index])
        <AppRoutes addFavorites={addFavoritesArr} products={products} openModal={openModal} addFavoritesFunc={addtoFavorites} deleteCartItem ={deleteCartItem}/>
 
 
-       {isOpenModal &&
-          <Modal text={text} backgroundColor={backgroundColor} color={color} handleClick ={() =>{setIsOpenModal({isOpenModal:false})}}  addCart={() => { addCart(cardId) }}></Modal >} 
-
+      
 
     </div>
 
-     
+      {isOpenModal &&
+          <Modal text={text} backgroundColor={backgroundColor} color={color} handleClick ={() =>{setIsOpenModal(false)}}  addCart={() => { addCart(cardId) }}></Modal >} 
+
     </>
   );
 }

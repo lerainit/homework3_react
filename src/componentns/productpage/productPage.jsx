@@ -1,5 +1,5 @@
 import React from 'react'
-import Card from './productCard'
+import Card from '../card/productCard'
 
 
 

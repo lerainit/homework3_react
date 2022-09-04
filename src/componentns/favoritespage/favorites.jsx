@@ -1,5 +1,5 @@
 import React from 'react'
-import FavItem from './FavItem'
+import FavItem from '../favitem/FavItem'
 
 const FavoritesPage = (props) =>{
 

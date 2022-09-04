@@ -1,4 +1,5 @@
 import React  from 'react'
+import styles from './productCard.module.scss'
 
 
  const Card =(props) => {
@@ -10,10 +11,10 @@ import React  from 'react'
             <ul>
                 <li><span>Name:</span>{props.name}</li>
                 <li><span>Price:</span>{props.price}</li>
-                <li><img className='image' src={props.url}   alt = 'Product '/></li>
+                <li><img className={styles.image} src={props.url}   alt = 'Product '/></li>
                 <li><span>Art:</span>{props.art}</li>
 
-                <svg className='svg' onClick = {props.addFavoritesFunc} version="1.0" xmlns="http://www.w3.org/2000/svg"
+                <svg onClick = {props.addFavoritesFunc} version="1.0" xmlns="http://www.w3.org/2000/svg"
  width="40.000000pt" height="26.000000pt" viewBox="0 0 1280.000000 1216.000000"
  preserveAspectRatio="xMidYMid meet">
 <metadata>
@@ -34,7 +35,7 @@ fill={props.fill} stroke="none">
 1388 -620 1525 -56 138 -104 253 -108 258 -3 4 -278 -610 -610 -1365z"/>
 </g>
 </svg>
- <button  className='addCart_btn' onClick = {() =>{props.openModal(props.id)}}>Add cart</button>
+ <button  className={styles.addCart_btn} onClick = {() =>{props.openModal(props.id)}}>Add cart</button>
             </ul>
             
             

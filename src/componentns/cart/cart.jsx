@@ -1,6 +1,6 @@
 import React from 'react'
 
-import CartItem from './cartItem'
+import CartItem from '../cartitem/cartItem'
 
 const CartPage = (props) =>{
 
