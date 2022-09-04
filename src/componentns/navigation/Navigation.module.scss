@@ -9,6 +9,7 @@
 
 .logo{
     color: royalblue;
+    text-decoration: none;
   }
   .cart{
     width: 40px;
@@ -32,4 +33,10 @@
   .button_container{
     width: 200px;
     height: 70px;
+  }
+  .cart_link{
+      text-decoration: none;
+  }
+  .fav_link{
+      text-decoration: none;
   }
